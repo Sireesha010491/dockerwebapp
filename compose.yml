@@ -2,20 +2,23 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: shaikmustafa/deepika:db
+    image: sireesha010491/vprofile-db:24
+    container_name: vprofile-db
+    restart: unless-stopped
     ports:
       - "3306:3306"
-    deploy:
-      replicas: 1
+    environment:
+      MYSQL_ROOT_PASSWORD: devopspassword
+      MYSQL_DATABASE: accounts
     networks:
       - mynetwork
 
   application:
-    image: shaikmustafa/deepika:app
+    image: sireesha010491/vprofile-app:24
+    container_name: vprofile-app
+    restart: unless-stopped
     ports:
       - "1111:8080"
-    deploy:
-      replicas: 3
     depends_on:
       - devopsdb
     networks:
@@ -23,4 +26,4 @@ services:
 
 networks:
   mynetwork:
-    driver: overlay
+    driver: bridge
