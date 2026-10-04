@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: sireesha010491/vprofile-db:24
+    image: sireesha010491/vprofile-db:latest
     container_name: vprofile-db
     restart: unless-stopped
     ports:
@@ -14,7 +14,7 @@ services:
       - mynetwork
 
   application:
-    image: sireesha010491/vprofile-app:24
+    image: sireesha010491/vprofile-app:latest
     container_name: vprofile-app
     restart: unless-stopped
     ports:
