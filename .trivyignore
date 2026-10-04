@@ -1,4 +1,11 @@
-# Spring Framework CVEs — app runs on Spring Boot 1.x (2017), not compatible with 6.x fixes
+# Spring Framework CVEs — app runs on Spring 4.x (2017), not compatible with 6.x fixes
 CVE-2024-38819
 CVE-2026-41842
 CVE-2026-41845
+CVE-2022-22965
+CVE-2024-22243
+CVE-2024-22259
+CVE-2024-22262
+CVE-2018-1275
+CVE-2016-1000027
+CVE-2016-9878
