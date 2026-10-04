@@ -1,5 +1,4 @@
-version: "3.9"
-
+---
 services:
   devopsdb:
     image: sireesha010491/vprofile-db:latest
